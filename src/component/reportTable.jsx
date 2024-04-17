@@ -9,7 +9,7 @@ const ReportTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/get-report", {
+        const response = await axios.get("http://103.127.132.71:8080/get-report", {
           headers: {
             Authorization:
               "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNhbWF0YmFydUBnbWFpbC5jb20iLCJpZCI6Mn0.slNGR8XvHFH5U_zA-UCnFs-ySAETODeuqwQBWB9_W3M",

@@ -78,7 +78,7 @@ export default function dashboard() {
     data.append("aduan", post.aduan);
     data.append("lokasi", post.lokasi);
     data.append("catatan_lokasi", post.catatan_lokasi);
-    data.append("images", post.images);
+    //data.append("images", post.images);
     data.append("topik", post.topik);
     //bring the state files to the form data
     for (let i = 0; i < files.length; i++) {
@@ -89,7 +89,7 @@ export default function dashboard() {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://localhost:8080/add-report",
+      url: "http://103.127.132.71:8080/add-report",
       headers: "multipart/form-data",
       data: data,
     };
@@ -152,7 +152,7 @@ export default function dashboard() {
             </div>
             <div>
               <img
-                src="src/assets/home_img.svg"
+                src="/assets/home_img.svg"
                 className="mt-12 sm:w-[960px]"
               />
             </div>
@@ -160,7 +160,7 @@ export default function dashboard() {
         </section>
         <section className="w-full mt-12">
           <div className="flex justify-center bg-blue-100">
-            <img src="src/assets/alur_landscape.png" />
+            <img src="/assets/alur_landscape.png" />
           </div>
         </section>
         <section id="form-aduan">
