@@ -89,7 +89,7 @@ export default function dashboard() {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "http://103.127.132.71:8080/add-report",
+      url: "https://api.laporcamatgetasan.site/add-report",
       headers: "multipart/form-data",
       data: data,
     };
